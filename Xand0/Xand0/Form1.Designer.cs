@@ -50,31 +50,9 @@
             textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(92, 59);
-            this.label1.MinimumSize = new System.Drawing.Size(153, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 24);
-            this.label1.TabIndex = 9;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(91, 266);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 41);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Restart";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox2
             // 
+            textBox2.BackColor = System.Drawing.Color.White;
             textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox2.HideSelection = false;
             textBox2.Location = new System.Drawing.Point(195, 207);
@@ -89,6 +67,7 @@
             // 
             // textBox3
             // 
+            textBox3.BackColor = System.Drawing.Color.White;
             textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox3.HideSelection = false;
             textBox3.Location = new System.Drawing.Point(143, 207);
@@ -103,6 +82,7 @@
             // 
             // textBox4
             // 
+            textBox4.BackColor = System.Drawing.Color.White;
             textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox4.HideSelection = false;
             textBox4.Location = new System.Drawing.Point(143, 155);
@@ -117,6 +97,7 @@
             // 
             // textBox5
             // 
+            textBox5.BackColor = System.Drawing.Color.White;
             textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox5.HideSelection = false;
             textBox5.Location = new System.Drawing.Point(195, 155);
@@ -131,6 +112,7 @@
             // 
             // textBox6
             // 
+            textBox6.BackColor = System.Drawing.Color.White;
             textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox6.HideSelection = false;
             textBox6.Location = new System.Drawing.Point(91, 207);
@@ -145,6 +127,7 @@
             // 
             // textBox7
             // 
+            textBox7.BackColor = System.Drawing.Color.White;
             textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox7.HideSelection = false;
             textBox7.Location = new System.Drawing.Point(143, 103);
@@ -159,6 +142,7 @@
             // 
             // textBox8
             // 
+            textBox8.BackColor = System.Drawing.Color.White;
             textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox8.HideSelection = false;
             textBox8.Location = new System.Drawing.Point(195, 103);
@@ -173,6 +157,7 @@
             // 
             // textBox9
             // 
+            textBox9.BackColor = System.Drawing.Color.White;
             textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox9.HideSelection = false;
             textBox9.Location = new System.Drawing.Point(91, 155);
@@ -187,6 +172,7 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = System.Drawing.Color.White;
             textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textBox1.HideSelection = false;
             textBox1.Location = new System.Drawing.Point(91, 103);
@@ -199,10 +185,38 @@
             textBox1.TabIndex = 20;
             textBox1.Click += new System.EventHandler(this.clc);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(198)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(92, 59);
+            this.label1.MinimumSize = new System.Drawing.Size(153, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 24);
+            this.label1.TabIndex = 9;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Enabled = false;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(91, 266);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(154, 41);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Restart";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(198)))));
             this.ClientSize = new System.Drawing.Size(362, 333);
             this.Controls.Add(textBox1);
             this.Controls.Add(textBox7);
@@ -215,6 +229,7 @@
             this.Controls.Add(textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

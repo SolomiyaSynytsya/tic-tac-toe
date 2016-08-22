@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -16,11 +17,12 @@ namespace Xand0
         private void Form1_Load(object sender, EventArgs e)
         {
             label1.Text = "Click any square";
-
+         
         }
         private void button1_Click(object sender, EventArgs e)
         {
             restart();
+
             i = 0;
         }
         private void clc(object sender, EventArgs e)
@@ -40,6 +42,21 @@ namespace Xand0
             }
             label1.Text = "Click any square";
             button1.Enabled = false;
+            removeColor();
+            
+        }
+        public void changeColor(List<Control> field, int i, int l, int k)
+        {
+            field[i].BackColor = Color.FromArgb(255, 192, 128);
+            field[l].BackColor = Color.FromArgb(255, 192, 128);
+            field[k].BackColor = Color.FromArgb(255, 192, 128);
+        }
+        public void removeColor()
+        {
+            foreach (TextBox tb in Controls.Cast<Control>().OfType<TextBox>())
+            {
+                if (tb.BackColor != Color.White) tb.BackColor = Color.White;
+            }   
         }
         public bool computerTurn()
         {
@@ -201,11 +218,13 @@ namespace Xand0
                 if (field[i].Text == "X" && field[l].Text == "X" && field[k].Text == "X")
                 {
                     label1.Text = "You won";
+                    changeColor(field, i, l, k);
                     return true;
                 }
                 else if (field[i].Text == "0" && field[l].Text == "0" && field[k].Text == "0")
                 {
-                    label1.Text = "Computer won"; 
+                    label1.Text = "Computer won";
+                    changeColor(field, i, l, k);
                     return true;
                 }
             }
@@ -220,11 +239,13 @@ namespace Xand0
                 if (field[i].Text == "X" && field[l].Text == "X" && field[k].Text == "X")
                 {
                     label1.Text = "You won";
+                    changeColor(field, i, l, k);
                     return true;
                 }
                 else if (field[i].Text == "0" && field[l].Text == "0" && field[k].Text == "0")
                 {
                     label1.Text = "Computer won";
+                    changeColor(field, i, l, k);
                     return true;
                 }
             }
@@ -233,19 +254,31 @@ namespace Xand0
 
         public bool checkDiagonals(List<Control> field)
         {
-            if ((field[0].Text == "X" && field[4].Text == "X" && field[8].Text == "X")
-                || (field[2].Text == "X" && field[4].Text == "X" && field[6].Text == "X"))
+            if (field[0].Text == "X" && field[4].Text == "X" && field[8].Text == "X")
             {
                 label1.Text = "You won";
+                changeColor(field, 0, 4, 8);
                 return true;
             }
-            else if ((field[0].Text == "0" && field[4].Text == "0" && field[8].Text == "0")
-                || (field[2].Text == "0" && field[4].Text == "0" && field[6].Text == "0"))
+            else if (field[2].Text == "X" && field[4].Text == "X" && field[6].Text == "X")
+            {
+                label1.Text = "You won";
+                changeColor(field, 2, 4, 6);
+                return true;
+            }
+            else if (field[0].Text == "0" && field[4].Text == "0" && field[8].Text == "0")
             {
                 label1.Text = "Computer won";
+                changeColor(field, 0, 4, 8);
                 return true;
             }
-            return false;
+             else if (field[2].Text == "0" && field[4].Text == "0" && field[6].Text == "0")
+            {
+                label1.Text = "Computer won";
+                changeColor(field, 2, 4, 6);
+                return true;
+            }
+           return false;
         }
 
         public bool checkWinner(List<Control> field)
@@ -270,6 +303,6 @@ namespace Xand0
                 }
             }
             return false;
-        }                                                       
+        }
     }
 }
