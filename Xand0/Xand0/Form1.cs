@@ -47,9 +47,9 @@ namespace Xand0
         }
         public void changeColor(List<Control> field, int i, int l, int k)
         {
-            field[i].BackColor = Color.FromArgb(255, 192, 128);
-            field[l].BackColor = Color.FromArgb(255, 192, 128);
-            field[k].BackColor = Color.FromArgb(255, 192, 128);
+            field[i].BackColor = Color.FromArgb(255, 150, 128);
+            field[l].BackColor = Color.FromArgb(255, 150, 128);
+            field[k].BackColor = Color.FromArgb(255, 150, 128);
         }
         public void removeColor()
         {
